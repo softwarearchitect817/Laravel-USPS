@@ -1,0 +1,43 @@
+{
+    "name": "johnpaulmedina/laravel-usps",
+    "description": "USPS API for Laravel 9",
+    "type": "library",
+    "keywords": [
+        "usps",
+        "laravel",
+        "laravel9",
+        "laravel usps"
+    ],
+    "authors": [
+        {
+            "name": "John Paul Medina",
+            "email": "jp@leadtrust.io"
+        },
+        {
+            "name": "Vincent Gabriel",
+            "link": "https://github.com/VinceG"
+        }
+    ],
+    "homepage":"https://github.com/johnpaulmedina/laravel-usps/",
+    "license": "MIT",
+    "require": {
+        "php": "^8.0.2",
+        "illuminate/support": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Johnpaulmedina\\Usps\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Johnpaulmedina\\Usps\\UspsServiceProvider"
+            ],
+            "aliases": {
+                "Usps": "Johnpaulmedina\\Usps\\Facades\\Usps"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
